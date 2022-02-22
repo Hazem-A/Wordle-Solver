@@ -115,11 +115,7 @@ int update(char word[], char pos[],int dup_pos,FILE* file_in,FILE* file_out,_Boo
         fread(new_line,1,1,file_in);
         write = true;
     }
-//    if (tries == 2){
-//        temp = sizeof (file_in->_base);
-//    } else if (tries >= 3){
-//        temp = sizeof (file_in->_base) + read_from + 3;
-//    }
+
 if (tries != 1) {
     bytes += 3;
 }
